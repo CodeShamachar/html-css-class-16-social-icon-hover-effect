@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", serif;
+  user-select: none;
+}
+
+:root {
+  --fbColor: #4267b2;
+  --twtrColor: #1da1f2;
+  --ytColor: #ff0000;
+  --instaColor: #c33089;
+  --gthbColor: #2b3137;
+  --whtapColor: #3ec34e;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(300deg, #aee3ff 0%, #ffaafe);
+}
+
+.mainContainer .buttonSection {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  /* float: left; */
+  margin: 0px 10px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px #00000080;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.mainContainer .buttonSection .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.mainContainer .buttonSection .icon i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.mainContainer .buttonSection span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+/* -------------Hover------------------------------------------- */
+/* ------------------------------------------------------------- */
+.mainContainer .buttonSection:hover {
+  width: 200px;
+}
+
+.mainContainer .buttonSection:hover span {
+  font-size: 1.6rem;
+}
+
+/* --------------------------------------------------------- */
+.mainContainer .buttonSection:nth-child(1):hover .icon {
+  background-color: var(--fbColor);
+}
+.mainContainer .buttonSection:nth-child(2):hover .icon {
+  background-color: var(--twtrColor);
+}
+.mainContainer .buttonSection:nth-child(3):hover .icon {
+  background-color: var(--ytColor);
+}
+.mainContainer .buttonSection:nth-child(4):hover .icon {
+  background-color: var(--instaColor);
+}
+.mainContainer .buttonSection:nth-child(5):hover .icon {
+  background-color: var(--gthbColor);
+}
+.mainContainer .buttonSection:nth-child(6):hover .icon {
+  background-color: var(--whtapColor);
+}
+
+/* --------------------------------------------------- */
+.mainContainer .buttonSection:hover .icon i {
+  color: #fff;
+}
+/* --------------------------------------------------- */
+
+.mainContainer .buttonSection:nth-child(1):hover span {
+  color: var(--fbColor);
+  padding-left: 10px;
+}
+.mainContainer .buttonSection:nth-child(2):hover span {
+  color: var(--twtrColor);
+  padding-left: 25px;
+}
+.mainContainer .buttonSection:nth-child(3):hover span {
+  color: var(--ytColor);
+  padding-left: 10px;
+}
+.mainContainer .buttonSection:nth-child(4):hover span {
+  color: var(--instaColor);
+  padding-left: 10px;
+}
+.mainContainer .buttonSection:nth-child(5):hover span {
+  color: var(--gthbColor);
+  padding-left: 20px;
+}
+.mainContainer .buttonSection:nth-child(6):hover span {
+  color: var(--whtapColor);
+}
+
+/* --------------------------------------------------------- */
+.mainContainer .buttonSection:hover .icon {
+  border-radius: 30%;
+}
